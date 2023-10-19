@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Input, Button } from "antd";
+import { Input, Button, Space } from "antd";
 import { Link } from "react-router-dom";
 import { SearchOutlined } from "@ant-design/icons";
 
@@ -27,7 +27,10 @@ function Header() {
             style={{ width: 400 }}
           />
         </S.SearchContainer>
-        <Button>Register</Button>
+        <Space>
+          <Button>Register</Button>
+          <Button>Login</Button>
+        </Space>
       </S.HeaderTopWrapper>
       <S.HeaderBottomWrapper>
         <S.NavLinkContainer>ABC</S.NavLinkContainer>
